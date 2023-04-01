@@ -1,6 +1,11 @@
 package net.emko.testmod;
 
 import com.mojang.logging.LogUtils;
+import net.emko.testmod.block.ModBlocks;
+import net.emko.testmod.item.ModCreativeModeTab;
+import net.emko.testmod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -23,6 +28,9 @@ public class TestMod {
     public TestMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -34,7 +42,12 @@ public class TestMod {
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
+        if (event.getTab() == ModCreativeModeTab.TAB1){
+            event.accept(ModItems.ANGEL);
+            event.accept(ModItems.COOKED_ANGEL);
 
+            event.accept(ModBlocks.ANGEL_BLOCK);
+        }
     }
 
 

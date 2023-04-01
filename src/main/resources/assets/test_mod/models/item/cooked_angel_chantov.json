@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "test_mod:item/cooked_angel_chantov"
+  }
+}
