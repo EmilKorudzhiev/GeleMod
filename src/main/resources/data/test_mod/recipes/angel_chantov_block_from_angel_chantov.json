@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+  "#": {
+    "item": "test_mod:angel_chantov"
+  }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+
+  "result": {
+    "item": "test_mod:angel_chantov_block"
+  }
+}

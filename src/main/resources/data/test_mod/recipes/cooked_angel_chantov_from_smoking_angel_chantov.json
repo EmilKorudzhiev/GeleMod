@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 200,
+  "experience": 2,
+  "group": "cooked_angel_chantov",
+  "ingredient": {
+    "item": "test_mod:angel_chantov"
+  },
+  "result": "test_mod:cooked_angel_chantov"
+}
