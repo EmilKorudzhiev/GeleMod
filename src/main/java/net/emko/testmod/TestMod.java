@@ -45,6 +45,7 @@ public class TestMod {
         if (event.getTab() == ModCreativeModeTab.TAB1){
             event.accept(ModItems.ANGEL);
             event.accept(ModItems.COOKED_ANGEL);
+            event.accept(ModItems.ANGEL_SWORD);
 
             event.accept(ModBlocks.ANGEL_BLOCK);
         }
@@ -59,4 +60,6 @@ public class TestMod {
         {
         }
     }
+
+
 }
