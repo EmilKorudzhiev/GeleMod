@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "test_mod:angel_chantov"
+    },
+    "F": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " F "
+  ],
+
+  "result": {
+    "item": "test_mod:chantoviq"
+  }
+}
